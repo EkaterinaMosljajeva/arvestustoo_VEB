@@ -1,0 +1,91 @@
+body{
+    background-color: #E9F1F3;
+    color: #3B9EA2;
+}
+nav{
+    background-color: #C6DAE1;
+}
+
+table{
+    width: 100%;
+    border: solid 1pt #3B9EA2;
+    border-collapse: collapse;
+}
+tr:hover{
+    background-color: #C6DAE1;
+}
+th {
+    background-color: #abcdd9;
+}
+a{
+    color: #3B9EA2;
+    background-color: #C6DAE1;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2E7E81;
+}
+
+input[type=button], input[type=submit], input[type=text], input[type=password]{
+    border: none;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #3B9EA2;
+    background-color: #C6DAE1;
+}
+
+button {
+    border: none;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    color: #3B9EA2;
+    background-color: #C6DAE1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #3B9EA2;
+}
+
+li {
+    float: left;
+    color: #3B9EA2;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #3B9EA2;
+}
+
+li a:hover {
+    background-color: #A7CDCE;
+    color: #3B9EA2;
+}
+
+div.login{
+    position: absolute; 
+    text-align: center;
+    top: 40%;
+    left: 40%;
+}
+form.form{
+    position: absolute; 
+    text-align: center;
+    top: 30%;
+    left: 40%;
+}
