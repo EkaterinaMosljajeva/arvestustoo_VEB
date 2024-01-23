@@ -83,7 +83,7 @@ else
         <?php
         // check to see if the user successfully created an account
         if (isset($success) && $success){
-            echo '<p color="green">Teie konto on loodud. <a href="./loginAB.php">Vajuta siia</a> sisse logida!<p>';
+            echo '<p color="green">Teie konto on loodud. <a href="login.php">Vajuta siia</a> sisse logida!<p>';
         }
         // check to see if the error message is set, if so display it
         else if (isset($error_msg))

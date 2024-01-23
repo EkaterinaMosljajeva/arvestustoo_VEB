@@ -7,9 +7,10 @@ $otsisona = "";
 //Registreerimine|Tabelisse lisamine
 if(isset($_REQUEST["suusahyppevoistlus"]) && !empty($_REQUEST["suusahyppevoistlus"])){
 
-    if (!is_numeric($_REQUEST["suusahyppevoistlus"])) {
+    if (is_numeric($_REQUEST["suusahyppevoistlus"])) {
         // Kui see ei ole numbriline, saame vea.
         echo "<script>alert('Viga: Sisestage ainult tähed, mitte numbrid!');</script>";
+        echo "<script>window.location.href = '$_SERVER[PHP_SELF]';</script>";
         exit();
     }
 
@@ -46,6 +47,7 @@ function kuvamine($sort="", $otsisona=""){
         array_push($andmed, $inimene);
     }
     return $andmed;
+    header("Location: $_SERVER[PHP_SELF]");
 }
 //Kustutamine
 if (isset($_REQUEST["kustuta"])) {
